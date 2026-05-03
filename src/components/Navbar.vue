@@ -12,7 +12,7 @@ const toggleMenu = () => {
     <nav class="navbar">
         <div class="nav-container">
             <router-link to="/" class="logo" @click="isMenuOpen = false">
-                <img src="/assets/logomark.png" alt="SkillBridge" style="height: 32px; width: 32px; border-radius: 8px;">
+                <img src="/assets/logomark.png" alt="SkillBridge" style="height: 40px; width: 40px; border-radius: 10px;">
                 <div class="logo-text">
                     <strong>SkillBridge</strong><br>
                     <span>Liberia</span>
