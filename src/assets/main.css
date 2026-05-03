@@ -464,7 +464,8 @@ button {
 
 /* Promise Section */
 .promise-section {
-    padding: 80px 0;
+    padding-top: 80px;
+    padding-bottom: 80px;
 }
 
 .section-header {
@@ -600,7 +601,8 @@ button {
 
 /* About Us / Bento Grid */
 .about-section {
-    padding: 80px 0;
+    padding-top: 80px;
+    padding-bottom: 80px;
 }
 
 .about-header {
@@ -761,7 +763,8 @@ button {
         padding: 60px 0 80px;
     }
     .promise-section, .about-section, .offices-section, .section {
-        padding: 60px 0;
+        padding-top: 60px;
+        padding-bottom: 60px;
     }
     .page-hero {
         padding: 60px var(--container-padding-mobile) 40px;
@@ -907,7 +910,8 @@ button {
 
 /* Global Offices Section */
 .offices-section {
-    padding: 120px 0;
+    padding-top: 120px;
+    padding-bottom: 120px;
     position: relative;
     background-color: var(--white);
     text-align: center;
