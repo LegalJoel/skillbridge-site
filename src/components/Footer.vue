@@ -2,7 +2,7 @@
 </script>
 
 <template>
-    <footer style="background-color: var(--black); color: var(--white); padding: 80px var(--container-padding-desktop) 40px;">
+    <footer class="site-footer">
         <div class="footer-top">
             <div class="logo" style="color: var(--white);">
                 <img src="/assets/logomark.png" alt="SkillBridge" style="height: 48px; width: 48px; border-radius: 8px;">

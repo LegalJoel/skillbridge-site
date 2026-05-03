@@ -402,6 +402,11 @@ button {
 .text-md { font-size: 16px; }
 
 /* Footer Styles */
+.site-footer {
+    background-color: var(--black);
+    color: var(--white);
+    padding: 80px var(--container-padding-desktop) 40px;
+}
 .footer-top {
     display: flex;
     justify-content: space-between;
@@ -431,6 +436,9 @@ button {
     font-size: 14px;
 }
 @media (max-width: 992px) {
+    .site-footer {
+        padding: 60px var(--container-padding-mobile) 40px;
+    }
     .footer-grid {
         grid-template-columns: 1fr 1fr;
     }
