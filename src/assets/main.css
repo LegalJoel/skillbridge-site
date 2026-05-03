@@ -58,7 +58,7 @@ button {
 }
 
 @media (max-width: 768px) {
-    .container, .nav-container {
+    .container {
         padding: 0 var(--container-padding-mobile);
     }
 }
@@ -176,6 +176,12 @@ button {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+@media (max-width: 768px) {
+    .nav-container {
+        padding: 0 var(--container-padding-mobile);
+    }
 }
 
 .logo {
