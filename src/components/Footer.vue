@@ -59,7 +59,7 @@
         </div>
 
         <div class="footer-bottom">
-            <div>© 2026 SkillBridge Liberia Corporation.</div>
+            <div>© 2026 SkillBridge Liberia Corporation. <span style="opacity: 0.5;">|</span> Built by <a href="https://iamkemz.com" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: underline; text-underline-offset: 4px; font-weight: 500;">KEMZ</a></div>
             <div>OHS Reg. No. 19 Compliant</div>
         </div>
     </footer>
