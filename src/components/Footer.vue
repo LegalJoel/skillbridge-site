@@ -3,7 +3,7 @@
 
 <template>
     <footer style="background-color: var(--black); color: var(--white); padding: 80px var(--container-padding-desktop) 40px;">
-        <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 64px; margin-bottom: 64px;">
+        <div class="footer-top">
             <div class="logo" style="color: var(--white);">
                 <img src="/assets/logomark.png" alt="SkillBridge" style="height: 48px; width: 48px; border-radius: 8px;">
                 <div class="logo-text" style="font-size: 20px;">
@@ -11,12 +11,12 @@
                     <span style="color: rgba(255,255,255,0.6);">Liberia</span>
                 </div>
             </div>
-            <div style="font-size: 24px; font-weight: 500; text-align: right; max-width: 300px; line-height: 1.2;">
+            <div class="footer-slogan">
                 BRIDGE YOUR SKILLS FORWARD.
             </div>
         </div>
 
-        <div style="display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 40px; margin-bottom: 80px;">
+        <div class="footer-grid">
             <div>
                 <h4 style="font-size: 14px; text-transform: uppercase; margin-bottom: 16px;">SUBSCRIBE TO UPDATES</h4>
                 <div style="display: flex; background: rgba(255,255,255,0.1); border-radius: 40px; padding: 8px 8px 8px 24px;">
@@ -58,7 +58,7 @@
             </div>
         </div>
 
-        <div style="display: flex; justify-content: space-between; align-items: center; color: rgba(255,255,255,0.4); font-size: 14px;">
+        <div class="footer-bottom">
             <div>© 2026 SkillBridge Liberia Corporation.</div>
             <div>OHS Reg. No. 19 Compliant</div>
         </div>
