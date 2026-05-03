@@ -58,7 +58,7 @@ button {
 }
 
 @media (max-width: 768px) {
-    .container {
+    .container, .nav-container {
         padding: 0 var(--container-padding-mobile);
     }
 }
@@ -371,8 +371,11 @@ button {
     .menu-btn {
         display: block;
     }
+    .header-cta span:first-child {
+        display: none;
+    }
     .header-cta {
-        display: none !important;
+        padding: 12px;
     }
     .mobile-only-link {
         display: block !important;
