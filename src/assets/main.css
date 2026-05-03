@@ -162,6 +162,9 @@ button {
 
 /* Navigation Bar */
 .navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
     padding: 24px 0;
     border-bottom: 1px solid rgba(0,0,0,0.05);
     background-color: var(--white);
