@@ -768,6 +768,14 @@ button {
     .hero-lines {
         display: none;
     }
+    .pin-label {
+        white-space: normal;
+        text-align: center;
+        width: 140px;
+    }
+    .pin-1 {
+        left: 35%;
+    }
 }
 
 /* Insights Section */
