@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/assets/logomark.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SkillBridge Liberia</title>
+    <!-- Fontshare for Satoshi font -->
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@900,700,500,300,400&display=swap" rel="stylesheet">
+    <!-- Google Fonts for Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="/src/main.js"></script>
+
+    <!-- A hidden form block for Netlify's build bots to parse the form fields correctly in an SPA -->
+    <form name="worker-registration" action="/thank-you" data-netlify="true" hidden>
+      <input type="text" name="fullname" />
+      <input type="date" name="dob" />
+      <input type="tel" name="phone" />
+      <input type="email" name="email" />
+      <input type="text" name="address" />
+      <select name="trade"></select>
+      <select name="experience"></select>
+      <select name="tools"></select>
+      <input type="checkbox" name="agree" />
+    </form>
+    <form name="client-request" action="/thank-you" data-netlify="true" hidden>
+      <input type="text" name="client_name" />
+      <input type="tel" name="client_phone" />
+      <select name="client_type"></select>
+      <select name="trade_needed"></select>
+      <select name="urgency"></select>
+      <textarea name="job_description"></textarea>
+      <input type="text" name="job_location" />
+      <input type="checkbox" name="agree_client" />
+    </form>
+    <form name="contact-form" action="/thank-you" data-netlify="true" hidden>
+      <input type="text" name="name" />
+      <input type="tel" name="phone" />
+      <input type="email" name="email" />
+      <select name="type"></select>
+      <select name="subject"></select>
+      <textarea name="message"></textarea>
+    </form>
+  </body>
+</html>
