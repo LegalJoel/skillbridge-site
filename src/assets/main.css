@@ -367,11 +367,8 @@ button {
     .menu-btn {
         display: block;
     }
-    .header-cta span:first-child {
-        display: none; /* Hide 'Hire a Worker' text, show only icon on small screens */
-    }
     .header-cta {
-        padding: 12px;
+        display: none; /* Hide entirely on mobile to prevent overlapping the logo */
     }
     .hero-bg-left, .hero-bg-right {
         display: none; /* Hide decorative images on small screens */
