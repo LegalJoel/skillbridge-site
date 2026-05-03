@@ -181,7 +181,7 @@ onMounted(() => {
         </section>
 
         <!-- Call to Action -->
-        <section class="section" style="padding: 120px var(--container-padding-desktop); text-align: center;">
+        <section class="section cta-section text-center">
             <div class="container">
                 <h2 class="h2 mb-4">Be Part of the Movement</h2>
                 <p class="text-md text-silver" style="max-width: 600px; margin: 0 auto 40px;">Whether you're a skilled worker looking for steady income, or a client who needs reliable service — SkillBridge Liberia is your answer.</p>
