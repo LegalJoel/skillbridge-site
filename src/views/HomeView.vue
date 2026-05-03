@@ -290,11 +290,13 @@ onMounted(() => {
             </div>
 
             <div class="offices-map">
-                <img src="/assets/liberia_map_bg.png" alt="Liberia Map" class="map-bg">
-                
-                <div class="map-pin pin-1">
-                    <div class="pin-label">Methodist Compound Premises<br>Monrovia, Liberia</div>
-                    <div class="pin-dot"></div>
+                <div style="position: relative; display: block;">
+                    <img src="/assets/liberia_map_bg.png" alt="Liberia Map" class="map-bg">
+                    
+                    <div class="map-pin pin-1">
+                        <div class="pin-label">Methodist Compound Premises<br>Monrovia, Liberia</div>
+                        <div class="pin-dot"></div>
+                    </div>
                 </div>
 
 
