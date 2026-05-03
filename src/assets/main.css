@@ -74,7 +74,7 @@ button {
 
 .h2 {
     font-family: var(--font-display);
-    font-size: clamp(40px, 5vw, 80px);
+    font-size: clamp(32px, 6vw, 80px);
     font-weight: 600;
     line-height: 1.1;
     letter-spacing: -0.03em;
@@ -574,20 +574,13 @@ button {
         gap: 40px;
     }
     .promise-tabs {
-        flex-direction: row;
-        overflow-x: auto;
-        white-space: nowrap;
-        gap: 24px;
-        -ms-overflow-style: none;
-        scrollbar-width: none;
-    }
-    .promise-tabs::-webkit-scrollbar {
-        display: none;
+        flex-direction: column;
+        gap: 0;
     }
     .tab {
-        border-bottom: none;
-        padding: 12px 0;
-        flex-shrink: 0;
+        border-bottom: 1px solid rgba(0,0,0,0.1);
+        padding: 16px 0;
+        justify-content: space-between;
     }
     .tab.active {
         border-bottom: 2px solid var(--black);
