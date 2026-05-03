@@ -232,6 +232,10 @@ button {
     gap: 24px;
 }
 
+.mobile-only-link {
+    display: none !important;
+}
+
 .dropbtn {
     display: flex;
     align-items: center;
@@ -368,7 +372,10 @@ button {
         display: block;
     }
     .header-cta {
-        display: none; /* Hide entirely on mobile to prevent overlapping the logo */
+        display: none !important;
+    }
+    .mobile-only-link {
+        display: block !important;
     }
     .hero-bg-left, .hero-bg-right {
         display: none; /* Hide decorative images on small screens */

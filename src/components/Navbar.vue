@@ -25,6 +25,7 @@ const toggleMenu = () => {
                 <router-link to="/services" @click="isMenuOpen = false">Services</router-link>
                 <router-link to="/register" @click="isMenuOpen = false">Register</router-link>
                 <router-link to="/contact" @click="isMenuOpen = false">Contact</router-link>
+                <router-link to="/register#hire" class="mobile-only-link" style="color: var(--orange); font-weight: 700; padding-top: 12px;" @click="isMenuOpen = false">Hire a Worker →</router-link>
             </div>
 
             <div class="nav-actions">
