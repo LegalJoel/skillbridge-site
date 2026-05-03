@@ -377,11 +377,8 @@ button {
     .menu-btn {
         display: block;
     }
-    .header-cta span:first-child {
-        display: none;
-    }
     .header-cta {
-        padding: 12px;
+        display: none !important;
     }
     .mobile-only-link {
         display: block !important;
