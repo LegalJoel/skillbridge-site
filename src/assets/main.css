@@ -779,10 +779,11 @@ button {
     .pin-label {
         white-space: normal;
         text-align: center;
-        width: 140px;
+        width: max-content;
+        max-width: 200px;
     }
     .pin-1 {
-        left: 35%;
+        left: 50%;
     }
 }
 
@@ -1098,11 +1099,13 @@ button {
     }
     .offices-bento-overlay {
         width: 100%;
+        max-width: 320px;
+        margin: -60px auto 40px;
         height: auto;
     }
     .offices-bento-overlay .bento-item {
         height: auto !important;
-        padding-bottom: 80px;
+        padding-bottom: 32px;
     }
 }
 
