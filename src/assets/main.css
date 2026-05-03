@@ -976,6 +976,64 @@ button {
     z-index: 3;
 }
 
+/* Registration CTA / Careers Section */
+.careers-section {
+    padding: 120px var(--container-padding-desktop);
+}
+.careers-content {
+    display: flex;
+    gap: 80px;
+    align-items: center;
+}
+.careers-text {
+    flex: 1;
+}
+.careers-image {
+    flex: 1;
+}
+.careers-image img {
+    border-radius: 24px;
+    width: 100%;
+}
+.careers-features {
+    margin-top: 40px;
+    border-top: 1px solid rgba(0,0,0,0.1);
+    padding-top: 24px;
+    display: flex;
+    gap: 40px;
+}
+.feature {
+    flex: 1;
+}
+
+/* Testimonial Section */
+.testimonial-section {
+    padding: 80px var(--container-padding-desktop);
+}
+.testimonial-quote-mark {
+    font-size: 64px;
+    color: var(--silver-gray);
+    line-height: 1;
+    margin-bottom: 24px;
+}
+.testimonial-quote {
+    font-size: 36px;
+    font-weight: 500;
+    max-width: 800px;
+    margin: 0 auto 24px;
+    line-height: 1.4;
+}
+.testimonial-author {
+    font-size: 16px;
+}
+.testimonial-images {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-top: 64px;
+    margin-bottom: 120px;
+}
+
 @media (max-width: 1024px) {
     .insights-header {
         flex-direction: column;
@@ -995,6 +1053,48 @@ button {
         bottom: 0;
         right: 0;
         margin: 40px auto 0;
+    }
+    .careers-section {
+        padding: 80px var(--container-padding-mobile);
+    }
+    .careers-content {
+        flex-direction: column;
+        gap: 40px;
+    }
+    .testimonial-section {
+        padding: 60px var(--container-padding-mobile);
+    }
+    .testimonial-images {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+    .testimonial-images img {
+        transform: none !important;
+        width: 100% !important;
+        height: auto !important;
+        max-width: 280px;
+    }
+}
+
+@media (max-width: 768px) {
+    .careers-features {
+        flex-direction: column;
+        gap: 24px;
+    }
+    .testimonial-quote-mark {
+        font-size: 48px;
+    }
+    .testimonial-quote {
+        font-size: 24px;
+    }
+    .offices-bento-overlay {
+        width: 100%;
+        height: auto;
+    }
+    .offices-bento-overlay .bento-item {
+        height: auto !important;
+        padding-bottom: 80px;
     }
 }
 

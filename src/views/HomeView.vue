@@ -315,9 +315,9 @@ onMounted(() => {
         </section>
 
         <!-- Registration CTA Section -->
-        <section class="careers-section container" style="padding: 120px var(--container-padding-desktop);">
-            <div style="display: flex; gap: 80px; align-items: center;">
-                <div style="flex: 1;">
+        <section class="careers-section container">
+            <div class="careers-content">
+                <div class="careers-text">
                     <span class="text-silver text-md mb-4" style="display:block;">Join the Network</span>
                     <h2 class="h2 mb-4">Tired of<br>Unreliable<br>Income?</h2>
                     <router-link to="/register#worker" class="btn-primary mb-4" style="background-color: var(--blue);">
@@ -327,8 +327,8 @@ onMounted(() => {
                         </span>
                     </router-link>
                     
-                    <div style="margin-top: 40px; border-top: 1px solid rgba(0,0,0,0.1); padding-top: 24px; display: flex; gap: 40px;">
-                        <div>
+                    <div class="careers-features">
+                        <div class="feature">
                             <h4 style="font-size: 18px; font-weight: 500; margin-bottom: 8px;">Get Jobs & Get Paid</h4>
                             <p class="text-silver text-md">Jobs come straight to you.</p>
                         </div>
@@ -337,21 +337,21 @@ onMounted(() => {
                         </div>
                     </div>
                 </div>
-                <div style="flex: 1;">
-                    <img src="/assets/hero_worker_1.png" alt="Happy Tradesperson" style="border-radius: 24px; width: 100%;">
+                <div class="careers-image">
+                    <img src="/assets/hero_worker_1.png" alt="Happy Tradesperson">
                 </div>
             </div>
         </section>
 
         <!-- Testimonial Section -->
-        <section class="testimonial-section container text-center" style="padding: 80px var(--container-padding-desktop);">
-            <div style="font-size: 64px; color: var(--silver-gray); line-height: 1; margin-bottom: 24px;">&ldquo;</div>
-            <h2 style="font-size: 36px; font-weight: 500; max-width: 800px; margin: 0 auto 24px; line-height: 1.4;">
+        <section class="testimonial-section container text-center">
+            <div class="testimonial-quote-mark">&ldquo;</div>
+            <h2 class="testimonial-quote">
                 "Before SkillBridge, I was looking for work every single day. Now jobs come to me. My income doubled in two months."
             </h2>
-            <p class="text-md text-silver mb-4">Emmanuel K. <strong>Electrician, Sinkor</strong></p>
+            <p class="testimonial-author text-md text-silver mb-4">Emmanuel K. <strong>Electrician, Sinkor</strong></p>
             
-            <div style="display: flex; justify-content: center; gap: 24px; margin-top: 64px; margin-bottom: 120px;">
+            <div class="testimonial-images">
                 <img src="/assets/hero_worker_1.png" style="width: 200px; height: 260px; object-fit: cover; border-radius: 16px;">
                 <img src="/assets/hero_worker_2.png" style="width: 200px; height: 260px; object-fit: cover; border-radius: 16px; transform: translateY(-20px);">
                 <img src="/assets/bento_construction.png" style="width: 200px; height: 260px; object-fit: cover; border-radius: 16px;">
