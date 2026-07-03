@@ -2,8 +2,42 @@
 import { onMounted } from 'vue'
 import gsap from 'gsap'
 import ScrollTrigger from 'gsap/ScrollTrigger'
+import TeamMember from '../components/TeamMember.vue'
 
 gsap.registerPlugin(ScrollTrigger)
+
+const teamMembers = [
+  {
+    name: 'Joel J. Barclay',
+    role: 'Founder & CEO',
+    image: '/assets/members/Joel_Barclay_FOUNDER&CEO.png'
+  },
+  {
+    name: 'Jeremiah Kesselly',
+    role: 'General Manager',
+    image: '/assets/members/Jeremiah_Kesselly_GENERALMANAGER.png'
+  },
+  {
+    name: 'Kelvin Zammie',
+    role: 'Chief Technology Officer',
+    image: '/assets/members/Kelvin_Zammie_CTO.png'
+  },
+  {
+    name: 'Eunice C. Diggs',
+    role: 'M&E Lead',
+    image: '/assets/members/Eunice_C_Diggs_M&E_LEAD.png'
+  },
+  {
+    name: 'Ericia David',
+    role: 'Social Media Manager',
+    image: '/assets/members/Ericia_David_SOCIALMEDIAMANAGER.png'
+  },
+  {
+    name: 'No Name',
+    role: 'Master Tradesperson Rep',
+    image: '/assets/members/3.png'
+  }
+]
 
 onMounted(() => {
   gsap.from('.page-hero h1', { y: 50, opacity: 0, duration: 1, ease: 'power3.out' })
@@ -111,30 +145,11 @@ onMounted(() => {
                 <p class="section-subtitle">Experienced professionals committed to transforming Liberia's skilled workforce</p>
                 
                 <div class="team-grid">
-                    <div class="team-card">
-                        <div class="team-avatar"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" style="width: 1em; height: 1em; display: inline-block; vertical-align: middle;"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" /></svg></div>
-                        <h3 style="font-size: 20px; margin-bottom: 8px;">Joel J. Barclay</h3>
-                        <div style="color: var(--orange); font-size: 14px; font-weight: 500; margin-bottom: 16px;">Founder & CEO</div>
-                        <p class="text-silver text-sm" style="line-height: 1.6;">Head of Administration, Finance & Project Management at Our Children Future, Inc. Certified in Project Management, Procurement, Logistics, & Supply Chain.</p>
-                    </div>
-                    <div class="team-card">
-                        <div class="team-avatar"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" style="width: 1em; height: 1em; display: inline-block; vertical-align: middle;"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75a4.5 4.5 0 01-4.884 4.484c-1.076-.091-2.264.071-2.95.904l-7.152 8.684a2.548 2.548 0 11-3.586-3.586l8.684-7.152c.833-.686.995-1.874.904-2.95a4.5 4.5 0 016.336-4.486l-3.276 3.276a3.004 3.004 0 002.25 2.25l3.276-3.276c.256.565.398 1.192.398 1.852z" /><path stroke-linecap="round" stroke-linejoin="round" d="M4.867 19.125h.008v.008h-.008v-.008z" /></svg></div>
-                        <h3 style="font-size: 20px; margin-bottom: 8px;">Advisory Board</h3>
-                        <div style="color: var(--orange); font-size: 14px; font-weight: 500; margin-bottom: 16px;">Master Tradesperson Rep</div>
-                        <p class="text-silver text-sm" style="line-height: 1.6;">Advises on trade standards, quality benchmarks, and worker assessment to ensure technical standards reflect real-world expertise.</p>
-                    </div>
-                    <div class="team-card">
-                        <div class="team-avatar"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" style="width: 1.2em; height: 1.2em; display: inline-block; vertical-align: middle;"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z" /></svg></div>
-                        <h3 style="font-size: 20px; margin-bottom: 8px;">Safety Expert</h3>
-                        <div style="color: var(--orange); font-size: 14px; font-weight: 500; margin-bottom: 16px;">OHS Compliance Advisor</div>
-                        <p class="text-silver text-sm" style="line-height: 1.6;">Ensures our training curriculum remains fully aligned with Liberia's OHS Regulation No. 19 and ILO standards. Leads certification workshops.</p>
-                    </div>
-                    <div class="team-card">
-                        <div class="team-avatar"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" style="width: 1.2em; height: 1.2em; display: inline-block; vertical-align: middle;"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3h12m-.75 4.5H21m-3.75 3.75h.008v.008h-.008v-.008Zm0 3h.008v.008h-.008v-.008Zm0 3h.008v.008h-.008v-.008Z" /></svg></div>
-                        <h3 style="font-size: 20px; margin-bottom: 8px;">Industry Partner</h3>
-                        <div style="color: var(--orange); font-size: 14px; font-weight: 500; margin-bottom: 16px;">Construction Industry Rep</div>
-                        <p class="text-silver text-sm" style="line-height: 1.6;">Senior leader providing market intelligence, B2B connections, and guidance on local content law compliance.</p>
-                    </div>
+                    <TeamMember 
+                        v-for="member in teamMembers" 
+                        :key="member.name"
+                        v-bind="member"
+                    />
                 </div>
             </div>
         </section>
