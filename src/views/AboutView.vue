@@ -13,7 +13,7 @@ const teamMembers = [
     image: '/assets/members/Joel_Barclay_FOUNDER&CEO.png'
   },
   {
-    name: 'Jeremiah Kesselly',
+    name: 'Jamel M. Kesselly',
     role: 'General Manager',
     image: '/assets/members/Jeremiah_Kesselly_GENERALMANAGER.png'
   },
