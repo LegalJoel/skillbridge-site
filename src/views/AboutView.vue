@@ -33,9 +33,9 @@ const teamMembers = [
     image: '/assets/members/Ericia_David_SOCIALMEDIAMANAGER.png'
   },
   {
-    name: 'No Name',
-    role: 'Master Tradesperson Rep',
-    image: '/assets/members/3.png'
+    name: 'Nehemiah Kemayah',
+    role: 'Head of Corporate Partnerships & Business Development',
+    image: '/assets/members/Nehemiah_Kemayah_HeadCorporatePartnerships&BusinessDevelopment.png'
   }
 ]
 
