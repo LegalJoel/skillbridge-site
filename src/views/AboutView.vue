@@ -36,6 +36,11 @@ const teamMembers = [
     name: 'Nehemiah Kemayah',
     role: 'Head of Corporate Partnerships & Business Development',
     image: '/assets/members/Nehemiah_Kemayah_HeadCorporatePartnerships&BusinessDevelopment.png'
+  },
+  {
+    name: 'Lorpu Faith Scott',
+    role: 'Board Chairperson',
+    image: '/assets/members/LorpuFaithScott_BoardChairperson.png'
   }
 ]
 
