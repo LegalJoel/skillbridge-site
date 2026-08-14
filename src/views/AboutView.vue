@@ -6,19 +6,14 @@ import TeamMember from '../components/TeamMember.vue'
 
 gsap.registerPlugin(ScrollTrigger)
 
-const teamMembers = [
+const leadershipMembers = [
   {
     name: 'Joel J. Barclay',
     role: 'Founder & CEO',
     image: '/assets/members/Joel_Barclay_FOUNDER&CEO.png'
   },
   {
-    name: 'Lorpu Faith Scott',
-    role: 'Board Chairperson',
-    image: '/assets/members/LorpuFaithScott_BoardChairperson.png'
-  },
-  {
-    name: 'Jeremiah Kesselly',
+    name: 'Jamel M. Kesselly',
     role: 'General Manager',
     image: '/assets/members/Jeremiah_Kesselly_GENERALMANAGER.png'
   },
@@ -43,7 +38,32 @@ const teamMembers = [
     image: '/assets/members/Nehemiah_Kemayah_HeadCorporatePartnerships&BusinessDevelopment.png'
   }
 ]
-
+  const boardMembers = [
+    {
+      name: 'Lorpu Faith Scott',
+      role: 'Board Chairperson',
+      image: '/assets/members/LorpuFaithScott_BoardChairperson.png'
+    },
+    {
+    name: '',
+    role: 'Co-Chairperson',
+    image: ''
+  },
+    {
+    name: '',
+    role: 'Member',
+    image: ''
+  },
+    {
+    name: '',
+    role: 'Member',
+    image: ''
+  },{
+    name: '',
+    role: 'Member',
+    image: ''
+  },
+]
 onMounted(() => {
   gsap.from('.page-hero h1', { y: 50, opacity: 0, duration: 1, ease: 'power3.out' })
   gsap.from('.page-hero p', { y: 30, opacity: 0, duration: 1, delay: 0.2, ease: 'power3.out' })
@@ -151,12 +171,30 @@ onMounted(() => {
                 
                 <div class="team-grid">
                     <TeamMember 
-                        v-for="member in teamMembers" 
+                        v-for="member in leadershipMembers" 
                         :key="member.name"
                         v-bind="member"
                     />
                 </div>
-            </div>
+              <section class="section"
+              id="board">
+                <div class="container">
+                  <h2
+              class="section-title">Board of Directors</h2>
+                  <p class="section-subtitle">
+                    Providing governance,
+              strategic oversight, and guidance for SkillBridge Liberia.
+                    </p>
+
+                  <div class="team-grid">
+                    <TeamMember
+                      v-for="member in 
+              boardMembers"
+                      :key="member.name"
+                      v-bind="member"
+                      />
+                    </div>         
+                </div>
         </section>
 
         <!-- Core Values -->
